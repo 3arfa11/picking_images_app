@@ -15,7 +15,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => ImagePickingCubit(),
-      child: MaterialApp(title: 'Image Picker', home: HomeView()),
+      child: const MaterialApp(
+        title: 'Image Picker',
+        home: HomeView(),
+        debugShowCheckedModeBanner: false,
+      ),
     );
   }
 }

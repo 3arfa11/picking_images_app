@@ -11,4 +11,9 @@ final class ImagePicked extends ImagePickingState {
   ImagePicked(this.imagePath);
 }
 
+class ImagesUpdated extends ImagePickingState {
+  final List<File> images;
+  ImagesUpdated(this.images);
+}
+
 final class ImageRemoved extends ImagePickingState {}
